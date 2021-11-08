@@ -1,0 +1,53 @@
+.skeleton {
+  width: 1140px;
+  padding: .5rem;
+
+  display: grid;
+  gap: 10px;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto;
+}
+
+
+/* POSTER */
+
+.skeleton__poster {
+  width: 300px;
+  height: 450px;
+  border-radius: 15px;
+}
+
+
+/* TITLE */
+
+.skeleton__title {
+  height: 40px;
+  margin-bottom: 8px;
+  border-radius: 15px;
+}
+
+
+/* DESCRIPTION */
+
+.skeleton__description {
+  height: 160px;
+  margin-bottom: 16px;
+  border-radius: 15px;
+}
+
+
+/* BADGES */
+
+.skeleton__badges {
+  margin-bottom: 24px;
+  height: 20px;
+  border-radius: 15px;
+}
+
+
+/* SUMMARY */
+
+.skeleton__summary {
+  height: 182px;
+  border-radius: 15px;
+}

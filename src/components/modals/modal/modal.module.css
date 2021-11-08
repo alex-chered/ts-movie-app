@@ -1,0 +1,30 @@
+.modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  border: 1px solid rgba(155, 155, 155, .2);
+  border-radius: 10px;
+}
+
+.modal__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1rem;
+
+  background: var(--primary-background);
+  border-radius: 10px 10px 0 0;
+}
+
+.modal__header-title {
+  line-height: 1.5;
+  font-size: 1.25rem;
+}
+
+.modal__header-times {
+  font-size: 1.25rem;
+  font-weight: bold;
+  cursor: pointer;
+}

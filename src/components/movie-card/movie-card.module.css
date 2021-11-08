@@ -1,0 +1,49 @@
+.movie-card {
+  display: block;
+  position: relative;
+  width: 255px;
+  height: 400px;
+
+  overflow: hidden;
+  
+  border-radius: 5px;
+  transition: all 0.2s ease;
+
+  cursor: pointer;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.movie-card:hover {
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.7);
+}
+
+.movie-card__inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 20px 10px;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+  transition: all 0.2s ease;
+}
+
+.movie-card__inner:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.movie-card__title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.movie-card__year {
+  font-size: .875rem;
+}

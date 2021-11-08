@@ -1,0 +1,19 @@
+.skeleton {
+  animation: shine 1.5s infinite;
+  background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.5) 50%,
+      rgba(255, 255, 255, 0) 80%
+    ),
+    #d3d3d3;
+  background-size: 20% 100%;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+@keyframes shine {
+  to {
+    background-position: 100% 0;
+  }
+}

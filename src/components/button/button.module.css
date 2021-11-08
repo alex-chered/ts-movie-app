@@ -1,0 +1,32 @@
+.button {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+
+  color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+
+  background-color: transparent;
+
+  font-size: 1rem;
+  line-height: 1.5;
+
+  padding: 0.375rem 0;
+
+  width: 100%;
+
+  border-radius: 0.25rem;
+
+  cursor: pointer;
+}
+
+.button:hover:not(.button--disabled) {
+  background-color: #dee2e6;
+  color: #000000;
+}
+
+.button--disabled {
+  color: #757575;
+  border-color: #757575;
+  cursor: not-allowed;
+}

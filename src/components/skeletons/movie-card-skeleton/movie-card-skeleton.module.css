@@ -1,0 +1,8 @@
+.skeleton {
+  display: block;
+
+  width: 255px;
+  height: 400px;
+  
+  border-radius: 5px;
+}
