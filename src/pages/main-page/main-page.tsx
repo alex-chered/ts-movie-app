@@ -67,21 +67,24 @@ export const MainPage = () => {
     return !loading && moviesLength === 0;
   };
 
-  // ERROR
-  if (errorText) {
-    return <Message text="При загрузке произошла ошибка" />;
-  }
-
-  // NO DATA
-  if (isNoData()) {
-    return <Message text="Нет данных" />;
-  }
-
   // RENDER
   return (
     <MainPageWrapper>
-      <MovieList />
-      <MainPagePagination />
+
+      {/* ERROR */}
+      { errorText && <Message text="При загрузке произошла ошибка" /> }
+
+      {/* NO DATA */}
+      { isNoData() && <Message text="Нет данных" /> }
+
+      {/* DATA */}
+      { !errorText && !isNoData() && (
+        <>
+          <MovieList />
+          <MainPagePagination />
+        </>
+      ) }
+
     </MainPageWrapper>
   );
 };

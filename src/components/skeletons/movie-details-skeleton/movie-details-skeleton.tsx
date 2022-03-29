@@ -9,7 +9,7 @@ export const MovieDetailsSkeleton = () => {
   return (
     <div className={styles['skeleton']}>
       <Skeleton className={styles['skeleton__poster']} />
-      <div>
+      <div className={styles['skeleton__right']}>
         <Skeleton className={styles['skeleton__title']} />
         <Skeleton className={styles['skeleton__description']} />
         <Skeleton className={styles['skeleton__badges']} />

@@ -22,7 +22,8 @@ export const MoviePage = () => {
   // Current movie from the store
   const { currentMovie } = useAppSelector(moviesSelectors.currentMovieSelector);
   // Get movie - status
-  const { loading } = useAppSelector(moviesSelectors.loadingSelector);
+  // const { loading } = useAppSelector(moviesSelectors.loadingSelector);
+  const loading = true;
   const { errorText } = useAppSelector(moviesSelectors.errorTextSelector);
 
   // Get movie by id
