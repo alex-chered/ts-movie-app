@@ -75,7 +75,7 @@ export const MainPage = () => {
       { errorText && <Message text="При загрузке произошла ошибка" /> }
 
       {/* NO DATA */}
-      { isNoData() && <Message text="Нет данных" /> }
+      { !errorText && isNoData() && <Message text="Нет данных" /> }
 
       {/* DATA */}
       { !errorText && !isNoData() && (

@@ -7,7 +7,8 @@ import { rootReducer } from './root-reducer';
 // Create store
 export const store = configureStore({
   reducer: rootReducer,
-  devTools: process.env.NODE_ENV !== 'production'
+  devTools: false
+  // devTools: process.env.NODE_ENV !== 'production'
 });
 
 // Infer the 'AppState' and 'AppDispatch' types from the store itself
